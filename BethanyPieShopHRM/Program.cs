@@ -1,4 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿//Commented out when starting on Decision and Iteration Statements segment of tutorial
+/*
+// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Welcome to Bethany's Pie Shop HRM");
 
 Console.WriteLine("Please enter your name: ");
@@ -30,6 +32,8 @@ string emptyString = "";
 double ratePerHour = 15.50;
 int numberOfHoursWorked = 40;
 
+long veryLongWeek = numberOfHoursWorked;
+
 double currentWeekWage = ratePerHour * numberOfHoursWorked + bonus;
 Console.WriteLine($"Hello {name}, your monthly wage is {currentWeekWage}.");
 
@@ -56,3 +60,16 @@ Console.WriteLine(startHour.ToLongDateString());
 Console.WriteLine(endHour.ToShortDateString());
 
 Console.ReadLine();
+
+*/
+
+int age = 23;
+
+bool a = age == 23;
+
+Console.WriteLine("Age is 23: " + a);
+
+bool b = age >= 23;
+Console.WriteLine("Age is greater than or equal to 23: " + b);
+
+
