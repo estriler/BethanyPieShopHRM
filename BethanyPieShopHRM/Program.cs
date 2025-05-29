@@ -65,14 +65,57 @@ Console.ReadLine();
 
 int age = 23;
 
-bool a = age == 23;
+//bool a = age == 23;
 
-Console.WriteLine("Age is 23: " + a);
+//Console.WriteLine("Age is 23: " + a);
 
-bool b = age >= 23;
-Console.WriteLine("Age is greater than or equal to 23: " + b);
+//bool b = age >= 23;
+//Console.WriteLine("Age is greater than or equal to 23: " + b);
 
-bool c = (age >= 18) && (age <= 65);
-Console.WriteLine("Age is between 18 and 65: " + c);
+//bool c = (age >= 18) && (age <= 65);
+//Console.WriteLine("Age is between 18 and 65: " + c);
 
+//Console.WriteLine("Enter the age of the new candidate: ");
+//int age = int.Parse(Console.ReadLine());
+
+//if (age < 18)
+//{
+//    Console.WriteLine("Candidate is too young.");
+//}
+//else if (age <= 65)
+//{
+//    Console.WriteLine("Candidate is eligible for the job.");
+//}
+//else
+//{
+//    Console.WriteLine("Candidate is too old.");
+//}
+
+//DateTime today = DateTime.Now;
+//bool endOfMonthPaymentStarted = false;
+
+//if(today.Date.Day == 20)
+//{
+//    Console.WriteLine("Please start end-of-month employee payments.");
+//}
+//else if(today.Date.Day >= 25 && !endOfMonthPaymentStarted)
+//{
+//    Console.WriteLine("Payments will be late.");
+//}
+
+switch(age)
+{
+    case < 18:
+        Console.WriteLine("Candidate is too young.");
+        break;
+    case > 65:
+        Console.WriteLine("Candidate is too old.");
+        break;
+    case 23:
+        Console.WriteLine("That is exactly the age we are looking for!");
+        break;
+    default:
+        Console.WriteLine("Great, you can now start with the application!");
+        break;
+}
 
