@@ -63,7 +63,7 @@ Console.ReadLine();
 
 */
 
-int age = 23;
+//int age = 23;
 
 //bool a = age == 23;
 
@@ -103,19 +103,52 @@ int age = 23;
 //    Console.WriteLine("Payments will be late.");
 //}
 
-switch(age)
+
+//switch(age)
+//{
+//    case < 18:
+//        Console.WriteLine("Candidate is too young.");
+//        break;
+//    case > 65:
+//        Console.WriteLine("Candidate is too old.");
+//        break;
+//    case 23:
+//        Console.WriteLine("That is exactly the age we are looking for!");
+//        break;
+//    default:
+//        Console.WriteLine("Great, you can now start with the application!");
+//        break;
+//}
+
+
+//Console.WriteLine("Enter a value: ");
+//int max = int.Parse(Console.ReadLine());
+//int i = 0;
+
+//while(i < max)
+//{
+//    Console.WriteLine("Current value: " + i);
+//    i++;
+//}
+
+//Console.WriteLine("Loop finished. Final value: " + i);
+
+
+for(int i = 0; i < 10; i++)
 {
-    case < 18:
-        Console.WriteLine("Candidate is too young.");
-        break;
-    case > 65:
-        Console.WriteLine("Candidate is too old.");
-        break;
-    case 23:
-        Console.WriteLine("That is exactly the age we are looking for!");
-        break;
-    default:
-        Console.WriteLine("Great, you can now start with the application!");
-        break;
+    if (i == 5)
+    {
+        Console.WriteLine("Skipping value 5.");
+        continue; // Skip the rest of the loop for this iteration
+    }
+
+    if (i == 8)
+    {
+        Console.WriteLine("Breaking at value 8.");
+        break; // Exit the loop entirely
+    }
+
+    Console.WriteLine("Current value: " + i);
 }
+
 
