@@ -134,21 +134,32 @@ Console.ReadLine();
 //Console.WriteLine("Loop finished. Final value: " + i);
 
 
-for(int i = 0; i < 10; i++)
+//for(int i = 0; i < 10; i++)
+//{
+//    if (i == 5)
+//    {
+//        Console.WriteLine("Skipping value 5.");
+//        continue; // Skip the rest of the loop for this iteration
+//    }
+
+//    if (i == 8)
+//    {
+//        Console.WriteLine("Breaking at value 8.");
+//        break; // Exit the loop entirely
+//    }
+
+//    Console.WriteLine("Current value: " + i);
+//}
+
+int amount = 1234;
+int months = 12;
+
+CalculateYearlyWage(amount, months);
+
+Console.ReadLine();
+
+static void CalculateYearlyWage(int monthlyWage, int numberOfMonthsWorked)
 {
-    if (i == 5)
-    {
-        Console.WriteLine("Skipping value 5.");
-        continue; // Skip the rest of the loop for this iteration
-    }
-
-    if (i == 8)
-    {
-        Console.WriteLine("Breaking at value 8.");
-        break; // Exit the loop entirely
-    }
-
-    Console.WriteLine("Current value: " + i);
+    Console.WriteLine($"Yearly wage: {monthlyWage * numberOfMonthsWorked}");
 }
-
 
