@@ -151,15 +151,16 @@ Console.ReadLine();
 //    Console.WriteLine("Current value: " + i);
 //}
 
+using BethanyPieShopHRM;
+
 int amount = 1234;
 int months = 12;
 
-CalculateYearlyWage(amount, months);
+int yearlyWage = Utilities.CalculateYearlyWage(amount, months);
+
+Console.WriteLine($"Yearly wage: {yearlyWage}");
 
 Console.ReadLine();
 
-static void CalculateYearlyWage(int monthlyWage, int numberOfMonthsWorked)
-{
-    Console.WriteLine($"Yearly wage: {monthlyWage * numberOfMonthsWorked}");
-}
+
 
